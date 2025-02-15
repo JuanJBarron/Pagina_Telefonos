@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Teléfonos</title>
+    <link rel="stylesheet" href="Telefonos.css">
+</head>
+<body>
+    <header>
+        <h1>Pagina de Teléfonos</h1>
+    </header>
+
+    <main>
+        <section id="android">
+            <h2>Teléfonos Android</h2>
+            <p> teléfonos Android disponibles.</p>
+         <a href="https://es.wikipedia.org/wiki/Samsung_Galaxy_S23" target="_blank">Samsung Galaxy S23</a><br>
+         <a href="https://es.wikipedia.org/wiki/Google_Pixel_8" target="_blank">Google Pixel 8</a><br>
+         <a href="https://es.wikipedia.org/wiki/Xiaomi_13" target="_blank">Xiaomi 13</a><br>
+        </section>
+
+        <section id="iphone">
+            <h2>Teléfonos iPhone</h2>
+            <p>Telefonos iPhone Dsiponibles.</p>
+            <a href="https://es.wikipedia.org/wiki/IPhone_14" target="_blank">iPhone 14</a><br>
+            <a href="https://es.wikipedia.org/wiki/IPhone_15" target="_blank">iPhone 15</a><br>
+            <a href="https://es.wikipedia.org/wiki/IPhone_13" target="_blank">iPhone 13</a><br>
+
+        </section>
+
+        <section id="suscripcion">
+            <h2>Recibe Notificaciones</h2>
+            <p>Si te interesa recibir notificaciones sobre nuevos dispositivos, ingresa tu nombre y correo.</p>
+            <form action="suscribirse.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <button type="submit" class="boton">Suscribirme</button>
+            </form>
+        </section>
+
+
+        <a href="contacto.html" class="boton">Contáctame</a>
+    </main>
+
+    <footer>
+        <p> Pagina x Juan</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+
+}
+
+header {
+    background-color: white;
+
+}
+
+section {
+    background: white;
+
+}
+
+.boton {
+    display: inline-block;
+    background-color: #007bff;
+
+}
+
+.boton:hover {
+    background-color: white;
+}
+
+footer {
+    background-color: white;
+
+}
