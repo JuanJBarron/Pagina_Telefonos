@@ -1,54 +1,183 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Teléfonos</title>
-    <link rel="stylesheet" href="Telefonos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accesorios para Móviles</title>
+  <link href="{% static '/tienda/accesorios.css' %}" rel="stylesheet" />
+  
 </head>
 <body>
-    <header>
-        <h1>Pagina de Teléfonos</h1>
-    </header>
+  <header>
+    <h1>Accesorios para Móviles</h1>
+  </header>
+  
+  <main>
+    <section id="Android">
+        <h2>Accesorios Android</h2>
+        <div class="grid-productos">
+          <div class="producto">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_968528-MLA82844370792_032025-F.webp" alt="Powerbank">
+            <h3>Powerbank 10,000mah 4 cables</h3>
+            <p class="precio">Mex$ 200.00</p>
+            <button>Comprar</button>
 
-    <main>
-        <section id="android">
-            <h2>Teléfonos Android</h2>
-            <p> teléfonos Android disponibles.</p>
-         <a href="https://es.wikipedia.org/wiki/Samsung_Galaxy_S23" target="_blank">Samsung Galaxy S23</a><br>
-         <a href="https://es.wikipedia.org/wiki/Google_Pixel_8" target="_blank">Google Pixel 8</a><br>
-         <a href="https://es.wikipedia.org/wiki/Xiaomi_13" target="_blank">Xiaomi 13</a><br>
-        </section>
+          </div>
+      
+          <div class="producto">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_781271-MLU77446324202_072024-F.webp" alt="Audifonos Bluetooth">
+            <h3>Nothing Buds Cmf</h3>
+            <p class="precio">Mex$ 683.00</p>
+            <button>Comprar</button>
 
-        <section id="iphone">
-            <h2>Teléfonos iPhone</h2>
-            <p>Telefonos iPhone Dsiponibles.</p>
-            <a href="https://es.wikipedia.org/wiki/IPhone_14" target="_blank">iPhone 14</a><br>
-            <a href="https://es.wikipedia.org/wiki/IPhone_15" target="_blank">iPhone 15</a><br>
-            <a href="https://es.wikipedia.org/wiki/IPhone_13" target="_blank">iPhone 13</a><br>
+          </div>
 
-        </section>
+          <div class="producto">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_990144-MLU76002706307_042024-F.webp" alt="Audifonos Bluetooth">
+            <h3>Oneplus Buds 3 </h3>
+            <p class="precio">Mex$ 1445.00</p>
+            <button>Comprar</button>
 
-        <section id="suscripcion">
-            <h2>Recibe Notificaciones</h2>
-            <p>Si te interesa recibir notificaciones sobre nuevos dispositivos, ingresa tu nombre y correo.</p>
-            <form action="suscribirse.php" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required><br><br>
+          </div>
+      
+          <div class="producto">
+            <img src="https://mx.redmagic.gg/cdn/shop/files/1_30b72c7d-990f-437f-af0e-87278e5eb2bf_600x600.png?v=1722254128" alt="Bocina Bluetooth">
+            <h3>Bocina Magnetica REDMAGIC</h3>
+            <p class="precio">Mex$ 499.00</p>
+            <button>Comprar</button>
 
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required><br><br>
+          </div>
 
-                <button type="submit" class="boton">Suscribirme</button>
-            </form>
-        </section>
+          <div class="producto">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sadf4fc80cdc1462c8ab653726e4e97aeL.jpg_220x220q75.jpg_.avif" alt="Cable C-C Trenzado">
+            <h3>Cable USB C a USB C Trenzado</h3>
+            <p class="precio">Mex$ 499.00</p>
+            <button>Comprar</button>
 
+          </div>
+      
+          <div class="producto">
+            <img src="https://mx.redmagic.gg/cdn/shop/products/5_08835efc-1abf-480b-a976-46d4dafaa066_600x600.png?v=1739327903" alt="Cable C-C">
+            <h3>Cable USB C a USB C 6A</h3>
+            <p class="precio">Mex$ 399.00</p>
+            <button>Comprar</button>
 
-        <a href="contacto.html" class="boton">Contáctame</a>
-    </main>
+          </div>
 
-    <footer>
-        <p> Pagina x Juan</p>
-    </footer>
+          <div class="producto">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sf8cd159a37ce434d9d53bc7b32243b7eh.png_220x220.png_.avif" alt="Cargador Nubia">
+            <h3>Cargador Nubia Gan5 80 W</h3>
+            <p class="precio">Mex$ 566.00</p>
+            <button>Comprar</button>
+
+          </div>
+
+          <div class="producto">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S58fc72e15bb64f0a82e95558ac48f0aeI.png_220x220.png_.avif" alt="Cargador Nubia">
+            <h3>Cargador Nubia Gan5 65 W</h3>
+            <p class="precio">Mex$ 485.00</p>
+            <button>Comprar</button>
+
+          </div>
+
+          <div class="producto">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S4a906304d0e94e7fb53c45441f959e62i.jpg_220x220q75.jpg_.avif" alt="Cargador Nubia">
+            <h3>Cargador Nubia Gan5 100 W</h3>
+            <p class="precio">Mex$ 900.00</p>
+            <button>Comprar</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://mx.redmagic.gg/cdn/shop/files/02_c1b27f19-3243-448c-9670-ca3d54de7188_600x600.png?v=1745235656" alt="Cooler">
+            <h3>Enfriador de Telefono</h3>
+            <p class="precio">Mex$ 999.00</p>
+            <button>Comprar</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://mx.redmagic.gg/cdn/shop/files/02_8218ba0e-4b9a-4e26-8112-b364d46906ab_600x600.png?v=1745235632" alt="MagCooler">
+            <h3>Endriador de Telefono Magnetico</h3>
+            <p class="precio">Mex$ 1199.00</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+      </section>
+
+    <section id="iphone">
+        <h2>Accesorios iPhone</h2>
+        <div class="grid-productos">
+          <div class="producto">
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MQGH2?wid=890&hei=890&fmt=jpeg&qlt=90&.v=ckd1R0UvYi9WeWlzR2ZWYUZJWjBjWXExblZJSGFXSFVPMUE2c2RxMy8rS0RxVjd3UW9Sd3NhM3FVVXYvTFpQWG1ESE8xdmF2WjZTRG9sQWlPRUs2Y0E" alt="Cable Iphone">
+            <h3>Cable de Iphone Lightning</h3>
+            <p class="precio">Mex$ 699.00</p>
+            <button>Comprar</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MMTN2?wid=890&hei=890&fmt=jpeg&qlt=95&.v=VXJacC9QaDhEelNvUG1qcFAwM0xXNHExblZJSGFXSFVPMUE2c2RxMy8rTHVNak4rcS9UYkx2ZU9SRkRBZ3RZZThCMTdQOG5IKzFCSGY4NkE5ZzFRUWc" alt="Earpods Lightning">
+            <h3>Earpods Lightning</h3>
+            <p class="precio">Mex$ 549.00</p>
+            <button>Comprar</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MTJY3?wid=890&hei=890&fmt=jpeg&qlt=90&.v=OTgxY2dUTHB5M2dRR2dzenZ6K0g3b3ExblZJSGFXSFVPMUE2c2RxMy8rSmViWXpURHd1VTNMMmRzQVQzYjdxUHN4TStjQ1pDZXlCOVA4MERlNkFJcEE" alt="Earpods Tipo C">
+            <h3>Earpods USB-C</h3>
+            <p class="precio">Mex$ 549.00</p>
+            <button>Comprar</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-pro-2-hero-select-202409?wid=890&hei=890&fmt=jpeg&qlt=90&.v=WTk1dTl5UTBnZXdKN2tua2pFb1hvQ3hmVXd6RnorM2pzUlRIKzNkUEN0U0ptek50N2NUQ2VXdHJ5VEVlUUpYcmJGcXNRQnFCV0w3WVRjTExvdm1ic1dyYTFZWlpPczBocnFKR3FYSlo5L1FXZEdHNUFPR0hYUU12cjI0VlFzM1A" alt="Airpods 2 Pro">
+            <h3>AirPods 2 Pro</h3>
+            <p class="precio">Mex$ 5799.00</p>
+            <button>Comprar</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MQKJ3?wid=890&hei=890&fmt=jpeg&qlt=90&.v=OTRHYWpHNjZnYzlZWWkxNmpOVzZpNHExblZJSGFXSFVPMUE2c2RxMy8rSmZnRzdhUmVDb245KzFCKzdvUUtZWkJJays0aGMvTUJRMmhGUkZ0V2s2Q3c" alt="Cable Iphone-C">
+            <h3>Cable de Iphone Tipo C</h3>
+            <p class="precio">Mex$ 499.00</p>
+            <button>Comprar</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MX6X3?wid=890&hei=890&fmt=jpeg&qlt=90&.v=RUFuREwrM2lzV3d2em1IdGFud0ZlSXExblZJSGFXSFVPMUE2c2RxMy8rTGRCOTc3a0hQeGlhVm1NMFJ2K0RkeVRtb1VCZHdGNFRJeGlhOEtPNVBETVE" alt="MagSafe">
+            <h3>Cargador MagSafe</h3>
+            <p class="precio">Mex$ 999.00</p>
+            <button>Comprar</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MU7T2_GEO_MX?wid=890&hei=890&fmt=jpeg&qlt=90&.v=d1dudG1mZU5YWGN5M2ZtWVUzMmdRRDB4dzUxNnFGVFhpQXJhOFBFbUxHY3pIV3RHbE5qdS8zMStVUzZUdGp5bE9PMHRJSURBRDRqOGJMWjlwQnBWbnc" alt="Adaptador">
+            <h3>Adaptador USB-C Iphone 20 W</h3>
+            <p class="precio">Mex$ 999.00</p>
+            <button>Comprar</button>
+          </div>
+        </div>
+    </section>
+      
+
+    <section id="suscripcion">
+      <h2>Recibe Notificaciones</h2>
+      <p>Si te interesa recibir notificaciones sobre nuevos accesorios, ingresa tu nombre y correo.</p>
+      <form action="suscribirse.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <button type="submit" class="boton">Suscribirme</button>
+      </form>
+    </section>
+
+    <a href="contacto.html" class="boton">Contáctame</a>
+  </main>
+
+  <footer>
+    <p>Página hecha por Juan</p>
+  </footer>
 </body>
 </html>
